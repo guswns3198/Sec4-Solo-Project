@@ -62,26 +62,28 @@ const Wrapper = styled.div`
  }
 
  .show-menu{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-width: 15%;
-height: 30%;
-position: absolute;
-left: 0px;
-transition: 1s;
-background-color: white;
-border: 3px solid black;
-overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 30%;
+  position: absolute;
+  left: 0px;
+  transition: 1s;
+  background-color: #FEFBF6;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .hide-menu{
-width: 376px;
-height: 500px;
+width: 15%;
+height: 30%;
 position: absolute;
-left: -376px;
+left: -15%;
 transition: 1s;
+background-color: #FEFBF6;
 }
 
 .menuchildren {
