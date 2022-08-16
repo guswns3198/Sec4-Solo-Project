@@ -137,7 +137,7 @@ function App() {
 
   const apiCall = axios
     .get(
-      `https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=853c4cbd37a70d08e338339338dcb154&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=Bucheon&appid=853c4cbd37a70d08e338339338dcb154&units=metric`
     )
     .then((res) => {
      // console.log(res);
