@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import TodoTemplate from './components/TodoTemplate';
-import TodoHead from './components/TodoHead';
-import TodoList from './components/TodoList';
-import TodoCreate from './components/TodoCreate';
 import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import TodoTemplate from './components/TodoTemplate';
+// import TodoHead from './components/TodoHead';
+// import TodoList from './components/TodoList';
+// import TodoCreate from './components/TodoCreate';
+import TodoLine from './components2/TodoLine';
+import TodoInput from './components2/TodoLine';
 
 
 const Wrapper = styled.div`
@@ -59,6 +61,7 @@ const Wrapper = styled.div`
    font-size: 2rem;
    padding-top: 20px;
    margin-left: 20px;
+   cursor: pointer;
  }
 
  .show-menu{
@@ -112,7 +115,6 @@ function App() {
 
   const handleButtonMenu = () => {
     setClick(!click);
-    console.log("메뉴")
   }
 
   const [timer, setTimer] = useState("00:00:00");
@@ -186,11 +188,9 @@ function App() {
         Write a Todo and Enter
       </span>
 
-      <TodoTemplate>
-        <TodoHead />
-        <TodoList />
-        <TodoCreate />
-      </TodoTemplate>      
+      <TodoLine>
+
+      </TodoLine>
 
 
   </Wrapper>
