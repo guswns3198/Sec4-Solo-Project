@@ -63,7 +63,7 @@ function TodoLists () {
     .then(res => {
       setList(res)
     })
-  }, [list])
+  }, [])
 
   const handleChangeClick = (e) => {
     setClick(!click);
@@ -100,7 +100,7 @@ function TodoLists () {
         body: JSON.stringify(allChange)
       })
       .then(() => {
-        console.log("성공")
+        window.location.reload("/")
       })
       .catch(() => {
         console.log("실패")
@@ -112,7 +112,7 @@ function TodoLists () {
       method: 'DELETE'
     })
     .then(() => {
-      console.log("삭제")
+      window.location.reload("/")
     })
     .catch(() => {
       console.log("실패")

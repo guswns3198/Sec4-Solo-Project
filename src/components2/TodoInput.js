@@ -71,7 +71,10 @@ function TodoInput () {
         body: JSON.stringify(todoReady)
       }
       fetch('http://localhost:3001/Todos/', reqPost)
-      .then(res => res.json())
+      .then(res => {
+        window.location.reload("/")
+        res.json()
+      })
       setList("")
     }
     
