@@ -70,7 +70,7 @@ function TodoInput () {
         },
         body: JSON.stringify(todoReady)
       }
-      fetch('http://localhost:3001/Todos/', reqPost)
+      fetch('https://my-solo-project-todolist.netlify.app/', reqPost)
       .then(res => {
         window.location.reload("/")
         res.json()
@@ -79,7 +79,7 @@ function TodoInput () {
     }
     
     useEffect(() => {
-      fetch("http://localhost:3001/Todos/")
+      fetch("https://my-solo-project-todolist.netlify.app/")
       .then(res => res.json())
       .then(res => setList(res))
     }, [])

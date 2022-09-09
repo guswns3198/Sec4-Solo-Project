@@ -59,7 +59,7 @@ function TodoLists () {
   const [input, setInput] = useState("")
 
   useEffect(() => {
-    fetch("http://localhost:3001/Todos/")
+    fetch("https://my-solo-project-todolist.netlify.app/")
     .then(res => res.json())
     .then(res => {
       setList(res)
@@ -93,7 +93,7 @@ function TodoLists () {
       }
     })
 
-    fetch(`http://localhost:3001/Todos/${e}`,{
+    fetch(`https://my-solo-project-todolist.netlify.app/${e}`,{
       method: 'PUT',
         headers: {
           "Content-Type": "application/json",
@@ -109,7 +109,7 @@ function TodoLists () {
   }
 
   const handleDeleteClick = (e) => {
-    fetch(`http://localhost:3001/Todos/${e}`, {
+    fetch(`https://my-solo-project-todolist.netlify.app/${e}`, {
       method: 'DELETE'
     })
     .then(() => {

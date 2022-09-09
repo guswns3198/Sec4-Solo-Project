@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
@@ -8,8 +9,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 // import TodoHead from './components/TodoHead';
 // import TodoList from './components/TodoList';
 // import TodoCreate from './components/TodoCreate';
-import TodoLine from './components2/TodoLine';
-import TodoInput from './components2/TodoLine';
+import TodoLine from './components/TodoLine';
+import TodoInput from './components/TodoLine';
 
 
 const Wrapper = styled.div`
@@ -159,8 +160,8 @@ function App() {
 
       <div className={click ? "show-menu" : "hide-menu"}>
 
-        <a className="menuchildren" href="https://github.com/guswns3198" target='_blank'><span>GitHub</span></a>
-        <a className="menuchildren" href="https://hjfestudyroom.tistory.com/" target='_blank'><span>Blog</span></a>
+        <a className="menuchildren" href="https://github.com/guswns3198" target='_blank' rel="noreferrer"><span>GitHub</span></a>
+        <a className="menuchildren" href="https://hjfestudyroom.tistory.com/" target='_blank' rel="noreferrer"><span>Blog</span></a>
 
       </div>
 
